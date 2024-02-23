@@ -7,8 +7,9 @@ h1 {
   font-size: large;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Courier New', sans-serif;
   font-color: #AF7AC5 
   margin-left: 10%;
   margin-right: 10%;
+  background-color: #FEF5E7;
 }
