@@ -2,14 +2,14 @@ p {
     text-wrap: pretty;  
 }
 h1 {
-  font-color: "#AF7AC5";
+  font-color: #B68EBD;
   background-color: #FEF5E7;
   font-size: xx-large;
   font-family: 'Courier New', sans-serif;
 }
 body {
   font-family: 'Courier New', sans-serif;
-  font-color: "#AF7AC5"; 
+  font-color: #B68EBD; 
   margin-left: 10%;
   margin-right: 10%;
   background-color: #FEF5E7;
