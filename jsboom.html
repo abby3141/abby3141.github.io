@@ -10,6 +10,7 @@
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
+            document.body.style.backgroundColor = "red"; 
 
             if (i <= 0) { // double "==" is equality comparison
                 countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
@@ -23,8 +24,6 @@
 
 <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
 <button onclick="updateCount()">Next</button>
-
-document.body.style.backgroundColor = "red"; 
 
 </body>
 </html>
