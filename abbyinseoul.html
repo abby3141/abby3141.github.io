@@ -36,11 +36,28 @@
 <script>
  var carouselImage = document.getElementById("cimage");
  carouselImage.src = ArrayExpression // this is how you update the URL for the image
- images = [ 'IMG_8369.jpeg',
-            'IMG_8373.jpeg',
-            'IMG_8402.jpeg' ] ;
 
-</script>  
+ function changeImage() {
+      carouse1Image.src = imageURLS[currentIndex];
+      currentIndex = ("current Index" + 1) % imageURLS.length // move to the next image or loop back to the first image
+
+ }
+
+ //Call the changeImage function initially to display the first image
+ changeImage();
+
+ </script>
+
+ <script>
+    var imageURLS = [
+        "images in seoul /IMG_8369.jpeg",
+        "images in seoul /IMG_8373.jpeg",
+        "images in seoul /IMG_8402.jpeg",
+    ];
+ </script>
+
+ <image id="cimage"><script>document.write(a)</script></span></h2>
+<button onclick="changeImage()">Click to See Next Image</button>
 
 
 <div class="problem">
