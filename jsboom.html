@@ -30,7 +30,7 @@
 <script>
     function updateCountUp() {
         a = a + 1; // single "=" means assignment (":=") 
-        countobj = document.getElementById("count");
+        countobj = document.getElementById("countup");
         console.log("Updating a: " + a);
         countobj.innerHTML = "<b>" + a + "</b>";
         
@@ -49,7 +49,7 @@
 var a = 0;
 </script>
 
-<h2>Count Up: <span id="count"><script>document.write(a)</script></span></h2>
+<h2>Count Up: <span id="countup"><script>document.write(a)</script></span></h2>
 <button onclick="updateCountUp()">Click to Go Up</button>
 
 
