@@ -3,8 +3,6 @@
     <h1>Exploring the DOM</h1>
 
     <script>
-        var i = 20;
-
         function updateCount() {
             i = i - 1; // single "=" means assignment (":=") 
             countobj = document.getElementById("count");
@@ -28,6 +26,10 @@
 
 <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
 <button onclick="updateCount()">Next</button>
+
+<h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
+<button onclick="updateCount()">Click me</button>
+
 
 </body>
 </html>
