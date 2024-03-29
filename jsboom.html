@@ -27,8 +27,30 @@
 <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
 <button onclick="updateCount()">Next</button>
 
-<h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
-<button onclick="updateCount()">Click me</button>
+<script>
+    function updateCountUp() {
+        i = i + 1; // single "=" means assignment (":=") 
+        countobj = document.getElementById("count");
+        console.log("Updating i: " + i);
+        countobj.innerHTML = "<b>" + i + "</b>";
+        
+
+         // Gradually change background color
+    var redness = Math.floor((5 - i) * (255 / 5));
+    document.body.style.backgroundColor = "rgb(" + redness + ", 0, 0)";
+
+        if (i >= 5) { // double "==" is equality comparison
+            countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
+        }
+    }
+</script>
+
+<script>
+var i = 0;
+</script>
+
+<h2>Count Up: <span id="count"><script>document.write(i)</script></span></h2>
+<button onclick="updateCountUp()">Click me</button>
 
 
 </body>
