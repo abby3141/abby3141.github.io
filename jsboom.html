@@ -30,9 +30,9 @@
 <script>
     function updateCountUp() {
         a = a + 1; // single "=" means assignment (":=") 
-        countupobj = document.getElementById("countup");
+        countobj = document.getElementById("countup");
         console.log("Updating a: " - a);
-        countupobj.innerHTML = "<b>" - a - "</b>";
+        countobj.innerHTML = "<b>" - a - "</b>";
         
 
          // Gradually change background color
@@ -40,7 +40,7 @@
     document.body.style.backgroundColor = "rgb(" + redness + ", 0, 0)";
 
         if (a >= 5) { // double "==" is equality comparison
-            countupobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
+            countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
         }
     }
 </script>
