@@ -10,7 +10,11 @@
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
-            document.body.style.backgroundColor = "red"; 
+            
+
+             // Gradually change background color
+        var redness = Math.floor((5 - i) * (255 / 5));
+        document.body.style.backgroundColor = "rgb(" + redness + ", 0, 0)";
 
             if (i <= 0) { // double "==" is equality comparison
                 countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
